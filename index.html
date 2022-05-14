@@ -12,77 +12,77 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>studio</title>
 </head>
 
 <body>
     <header class="header" >
         <div class="container">
-            <a class="logo header__logo" href="" lang="en"><span class="logo-firstpart">Web</span><span class="header__logo--secondpart">Studio</span></a>
-            <nav class="navigation">
-                <ul class="menu-list markerout">
-                    <li class="menu-list__item"><a class="menu-list__link current" href="index.html">Студия</a></li>
-                    <li class="menu-list__item"><a class="menu-list__link" href="portfolio.html">Портфолио</a></li>
-                    <li class="menu-list__item"><a class="menu-list__link" href="">Контакты</a></li>
+            <a class="header-logo" href="" lang="en"><span class="logo-firstpart">Web</span><span class="logo-secondpart">Studio</span></a>
+            <nav>
+                <ul class="site-nav markerout">
+                    <li class="item"><a class="header-link current" href="index.html">Студия</a></li>
+                    <li class="item"><a class="header-link" href="portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="header-link" href="">Контакты</a></li>
                 </ul>
             </nav>
             <div class="contacts">
-            <a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16" height="12">
+            <a class="header-mail" href="mailto:info@devstudio.com"><svg class="contacts-icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope">
 
                 </use>
             </svg>info@devstudio.com</a>
-            <a class="contacts__link phone" href="tel:+380961111111"><svg class="contacts__icon" width="10" height="16"><use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
+            <a class="header-tel" href="tel:+380961111111"><svg class="contacts-icon" width="10" height="16"><use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
             </div>
         </div>
     </header>
     <main>
         <section class="hero">
         <div class="container">    
-        <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
-        <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
+        <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
+        <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
         </section>
-        <section class="features">
+        <section class="section-features">
         <div class="container">
-        <h2 class="features__title">Наши преимущества</h2>
-        <ul class="features__list markerout">
-            <li class="features__item">
-                <div class="features-card">
-                    <svg class="features-card__icon" width="70" height="70">
-                        <use href="./images/symbol-defs.svg#icon-antenna"></use>
-                    </svg>  
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="features markerout">
+            <li class="features-list">
+                <div class="features-picture">
+                  <svg class="features-icon" width="70" height="70">
+                      <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                  </svg>  
                 </div>
-                <h3 class="features-card__title">Внимание к деталям</h3>
-                <p class="features-card__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                <h3 class="features-title">Внимание к деталям</h3>
+                <p class="feature-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li class="features__item">
-                <div class="features-card">
-                    <svg class="features-card__icon" width="70" height="70">
+            <li class="features-list">
+                <div class="features-picture">
+                    <svg class="features-icon" width="70" height="70">
                         <use href="./images/symbol-defs.svg#icon-clock"></use>
                     </svg>
                 </div>
-                <h3 class="features-card__title">Пунктуальность</h3>
-                <p class="features-card__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <h3 class="features-title">Пунктуальность</h3>
+                <p class="feature-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li class="features__item">
-                <div class="features-card">
-                    <svg class="features-card__icon" width="70" height="70">
+            <li class="features-list">
+                <div class="features-picture">
+                    <svg class="features-icon" width="70" height="70">
                         <use href="./images/symbol-defs.svg#icon-diagram"></use>
                     </svg>
                 </div>
-                <h3 class="features-card__title">Планирование</h3>
-                <p class="features-card__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <h3 class="features-title">Планирование</h3>
+                <p class="feature-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li class="features__item" >
-                <div class="features-card">
-                    <svg class="features-card__icon" width="70" height="70">
+            <li class="features-list" >
+                <div class="features-picture">
+                    <svg class="features-icon" width="70" height="70">
                         <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                     </svg>
                 </div>
-                <h3 class="features-card__title">Современные технологии</h3>
-                <p class="features-card__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <h3 class="features-title">Современные технологии</h3>
+                <p class="feature-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
         </div>
@@ -260,7 +260,7 @@
     <footer class="footer">
         <div class="footer-main container">
             <div class="footer-contacts">
-                <a class="logo footer__logo" href="" lang="en"><span class="logo-firstpart">Web</span><span class="footer__logo--secondpart">Studio</span></a>
+                <a class="footer-logo" href="" lang="en"><span class="logo-firstpart">Web</span><span class="footer-logo-secondpart">Studio</span></a>
                 <div class="adress">
                 <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
                 <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
