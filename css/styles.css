@@ -73,7 +73,7 @@ ol {
     display: flex;
     align-items:center ;
 }
-.header-logo{
+.logo{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -81,15 +81,17 @@ ol {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
+}
+.header__logo{
     margin-right: 95px;
 }
-.logo-firstpart{
+.header__logo--firstpart{
     color: var(--accent-color);
 }
-.logo-secondpart{
+.header__logo--secondpart{
     color:#000000;
 }
-.header-link{
+.menu__link{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -102,26 +104,25 @@ ol {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-   display: block;
+    display: block;
 }
-.header-link:hover,
-.header-link:focus{
+.menu__link:hover,
+.menu__link:focus{
     color: var(--accent-color);
 }
-.site-nav{
+.menu__list {
     display: flex;
 }
-.site-nav .item:not(:last-child){
+.menu__list .menu__item:not(:last-child){
     margin-right: 50px;
 }
-.site-nav .header-link.current{
+.menu__list .menu__link.current{
     color: var(--accent-color);
     position: relative;
     display: block;
-   
 }
 
-.header-link.current::after{
+.menu__link.current::after{
     content:'' ;
     display: block;
     background-color: var(--accent-color);
@@ -137,7 +138,7 @@ ol {
 .contacts{
     margin-left: auto;
 }
-.header-mail{
+.contacts__mail{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -148,11 +149,11 @@ ol {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-mail:hover,
-.header-mail:focus{
+.contacts__mail:hover,
+.contacts__mail:focus{
     color: var(--accent-color);
 }
-.header-tel{
+.contacts__tel{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -164,11 +165,11 @@ ol {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-tel:hover,
-.header-tel:focus {
+.contacts__tel:hover,
+.contacts__tel:focus {
     color: var(--accent-color);
 }
-.contacts-icon{
+.contacts__icon{
     fill:currentColor;
     margin-right: 10px;
 }
@@ -603,17 +604,17 @@ ol {
 
 
 /*--------------------potfolio----------------------------*/
-.examples{
+/* .examples{
     background-color: var(--footer-color);
-}
-.examples-btn{
+} */
+.filter{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
 /*кнопки портфолио*/
-.button {
+.filter__button {
     display: block;
     font-family: inherit;
     font-style: normal;
@@ -633,11 +634,11 @@ ol {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.examples-btn .li-btn:not(:last-child){
+.filter .filter__item:not(:last-child){
     margin-right: 8px;
 }
-.button:hover,
-.button:focus {
+.filter__button:hover,
+.filter__button:focus {
     color: #fff;
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -645,14 +646,14 @@ ol {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* --------------------------------examples------------------------------ */
-.examples-images{
+.portfolio__list{
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
 }
 
-.examples-images .cards{
+.portfolio__list .portfolio__item{
     
       /* Задаём всем элементам маржины слева и сверху */
     margin-left: 30px;
@@ -663,13 +664,13 @@ ol {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cards:hover{
+.portfolio__item:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.cards .img{
+.portfolio__item .card-top-wrap__img{
     display: block;
     max-width: 100%;
     height: auto;
@@ -678,16 +679,16 @@ ol {
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
 }
-.examples-top-wrap{
+.card-top-wrap{
     position: relative;
     overflow: hidden;
 }
 
-.cards:hover .examples-info-text{ 
+.portfolio__item:hover .card-top-wrap__text{ 
     transform: translateY(0%);
 }
 
-.examples-info-text{
+.card-top-wrap__text{
     position: absolute;
     font-weight: 400;
     font-size: 18px;
@@ -702,7 +703,7 @@ ol {
     overflow: auto;
 }
 
-.examples-title{
+.card__title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -710,7 +711,7 @@ ol {
     color: var(--title-color);
     margin-bottom: 4px;
 }
-.examples-text{
+.card__text{
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
