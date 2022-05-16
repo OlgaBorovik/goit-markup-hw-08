@@ -27,7 +27,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transition: transform 1000ms;
+    transition: transform 250ms;
     transform: translate(-50%, -50%) scale(1) rotate(0);
 
     .modal-title {
