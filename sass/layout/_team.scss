@@ -2,12 +2,18 @@
     background-color: var(--team-backgroundcolor);
 
     .team-title {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        @include desktop {
+            margin-bottom: 50px;
+        }
     }
 }
 
 .team-list {
+    @include tablet {
     display: flex;
+    flex-wrap: wrap;
+}
 }
 
 .team-item {
@@ -20,7 +26,7 @@
     padding-bottom: 30px;
 
     &:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
 
     .team-img {
@@ -52,6 +58,8 @@
     display: flex;
     justify-content: center;
     margin-top: 16px;
+    width: 206px;
+    margin: auto;
 
     .team-soc-item {
         &:not(:last-child) {

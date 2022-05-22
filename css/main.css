@@ -42,18 +42,42 @@ ol {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
-  /* outline: 1px solid red; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .section {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .visually-hidden {
@@ -108,11 +132,19 @@ ol {
 }
 
 .title {
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .secondary-title {
@@ -415,7 +447,7 @@ ol {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk.jpg);
   max-width: 1600px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -423,22 +455,36 @@ ol {
   display: flex;
   flex-direction: column;
   align-content: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #2F303A;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero .hero__title {
   color: #fff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  font-size: 26px;
+  line-height: 1.62;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero .hero__btn {
@@ -455,29 +501,48 @@ ol {
 }
 
 .features {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 94px;
-  padding-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+  }
+}
+
 .features .features-list {
-  display: flex;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features .features-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .features .features-item {
-  display: block;
-  width: 270px;
+  margin-bottom: 30px;
 }
 
-.features .features-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .features .features-item {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .features .features-picture {
   display: flex;
-  width: 270px;
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
@@ -488,6 +553,7 @@ ol {
 .features .features-title {
   color: var(--title-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .features .feature-text {
@@ -498,6 +564,12 @@ ol {
 
 .features .features-icon {
   color: var(--icon-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .job {
+    display: none;
+  }
 }
 
 .job .job-title {
@@ -540,11 +612,20 @@ ol {
 }
 
 .team .team-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-.team-list {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .team .team-title {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .team-item {
@@ -556,7 +637,7 @@ ol {
 }
 
 .team-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team-item .team-img {
@@ -587,6 +668,8 @@ ol {
   display: flex;
   justify-content: center;
   margin-top: 16px;
+  width: 206px;
+  margin: auto;
 }
 
 .team-soc-list .team-soc-item:not(:last-child) {

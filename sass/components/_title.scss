@@ -1,9 +1,15 @@
 .title {
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
     text-align: center;
     color: var(--title-color);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    
+    @include desktop {
+    font-size: 36px;
+    line-height: 1.17;
+        }
 }
 
 .secondary-title {
