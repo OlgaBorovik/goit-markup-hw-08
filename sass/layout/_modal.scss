@@ -1,11 +1,15 @@
 .backdrop {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position: fixed;
     top: 0;
+    left: 0;
+    padding: 93px 15px 94px 15px;
     background-color: rgba(0, 0, 0, 0.2);
     transition-property: opacity, visibility;
     transition-duration: 500ms, 500ms;
+    overflow-y: scroll;
+    
 }
 
 .is-hidden {
@@ -19,23 +23,32 @@
 }
 
 .modal {
-    width: 528px;
-    height: 581px;
-    background-color: #fff;
-    border-radius: 4px;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: transform 250ms;
-    transform: translate(-50%, -50%) scale(1) rotate(0);
+        // width: 450px;
+        // height: 609px;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 40px;
+        
+        @include tablet {
+            width: 450px;
+            height: 609px;
+            position: absolute;
+                top: 50%;
+                left: 50%;
+                transition: transform 250ms;
+                transform: translate(-50%, -50%) scale(1) rotate(0);
+        }
+        @include desktop {
+            width: 528px;
+            height: 581px;
+        }
+    }
+
+    
 
     .modal-title {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
+        @include font (700, 20px, 1.15, 0.0em);
         text-align: center;
-        letter-spacing: 0.03em;
         color: var(--title-color);
         margin-bottom: 12px;
     }
@@ -57,7 +70,7 @@
         }
 
     }
-}
+
 
 .modal-label {
     font-size: 12px;
@@ -117,10 +130,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &::placeholder {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.01em;
+        @include font (400,14px, 1.14, 0.01em);
         color: rgba(117, 117, 117, 0.5);
     }
 
@@ -130,18 +140,13 @@
 }
 
 .modal-text {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font (400, 12px, 1.17, 0.01em);
     color: var(--text-color);
 }
 
 .check-text {
     display: flex;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font (400, 12px, 1.17, 0.03em);
     color: var(--text-color);
     align-items: center;
 
@@ -152,6 +157,9 @@
         border: 2px solid var(--title-color);
         border-radius: 3px;
         margin-right: 5px;
+    }
+    @include desktop {
+    @include font (400, 14px, 1.71,0.03em);
     }
 }
 

@@ -20,10 +20,15 @@
         <div class="container">
             <a class="logo header__logo" href="" lang="en"><span class="logo__firstpart">Web</span><span
                     class="logo__secondpart--dark">Studio</span></a>
+            <button type="button" class="menu-open-btn">
+                <svg class="menu-open-icon">
+                    <use href="./images/symbol-defs.svg#icon-menu_40px" width="40" height="40"></use>
+                </svg>
+            </button>
             <nav class="menu">
                 <ul class="menu__list markerout">
-                    <li class="menu__item"><a class="menu__link " href="index.html">Студия</a></li>
-                    <li class="menu__item"><a class="menu__link current" href="portfolio.html">Портфолио</a></li>
+                    <li class="menu__item"><a class="menu__link current" href="index.html">Студия</a></li>
+                    <li class="menu__item"><a class="menu__link " href="portfolio.html">Портфолио</a></li>
                     <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
                 </ul>
             </nav>
@@ -37,6 +42,39 @@
                 <a class="contacts__tel" href="tel:+380961111111"><svg class="contacts__icon" width="10" height="16">
                         <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a>
+            </div>
+        </div>
+        <div class="mob-menu is-hidden">
+            <div class="container">
+                <button class="menu-close-btn" type="button">
+                    <svg class="menu-close-icon" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+                    </svg>
+                </button>
+                <div class="mob-menu-top">
+                    <ul class="mob-menu__list markerout">
+                        <li class="mob-menu__item"><a class="mob-menu__link" href="index.html">Студия</a></li>
+                        <li class="mob-menu__item"><a class="mob-menu__link" href="portfolio.html">Портфолио</a></li>
+                        <li class="mob-menu__item"><a class="mob-menu__link" href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                    <div class="mob-contacts">
+                        <a class="mob-contacts__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <a class="mob-contacts__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    
+                    </div>
+                    <div class="mob-soc">
+                        <ul class="mob-soc__list markerout">
+                            <li class="mob-soc__item"><a class="mob-soc__link" href="">Instagram</a></li>
+                            <li class="mob-soc__item"><a class="mob-soc__link" href="">Twitter</a></li>
+                            <li class="mob-soc__item"><a class="mob-soc__link" href="">Facebook</a></li>
+                            <li class="mob-soc__item"><a class="mob-soc__link" href="">LinkedIn</a></li>
+    
+    
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -53,7 +91,11 @@
             <ul class="portfolio__list markerout">
                 <li class="portfolio__item">
                     <div class="card-top-wrap">
-                    <img class="card-top-wrap__img" src="./images/picture1.jpg" alt="Технокряк" width="370">
+                    <img class="card-top-wrap__img"
+                        srcset="./images/picture1.jpg 1x, 
+                                ./images/picture1-desk-2x.jpg 2x" 
+                        src="./images/picture1.jpg" 
+                        alt="Технокряк">
                     <p class="card-top-wrap__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                             позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div> 
@@ -65,7 +107,11 @@
                 </li>
                 <li class="portfolio__item">
                     <div class="card-top-wrap">
-                    <img class="card-top-wrap__img" src="./images/picture2.jpg" alt="New Orlean" width="370">
+                    <img class="card-top-wrap__img"
+                        srcset="./images/picture2.jpg 1x, 
+                                ./images/picture2-desk-2x.jpg 2x"  
+                        src="./images/picture2.jpg" 
+                    alt="New Orlean">
                     <p class="card-top-wrap__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -76,7 +122,10 @@
                 </li>
                 <li class="portfolio__item">
                     <div class="card-top-wrap">
-                    <img class="card-top-wrap__img" src="./images/picture3.jpg" alt="Seafood" width="370">
+                    <img class="card-top-wrap__img"
+                        srcset="./images/picture3.jpg 1x, 
+                                ./images/picture3-desk-2x.jpg 2x" 
+                        src="./images/picture3.jpg" alt="Seafood">
                     <p class="card-top-wrap__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -87,7 +136,10 @@
                 </li>
                 <li class="portfolio__item">
                     <div class="card-top-wrap">
-                    <img class="card-top-wrap__img" src="./images/picture4.jpg" alt="Prime" width="370">
+                    <img class="card-top-wrap__img"
+                        srcset="./images/picture4.jpg 1x, 
+                                ./images/picture4-desk-2x.jpg 2x"  
+                        src="./images/picture4.jpg" alt="Prime">
                     <p class="card-top-wrap__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -98,7 +150,10 @@
                 </li>
                 <li class="portfolio__item">
                     <div class="card-top-wrap">
-                    <img class="card-top-wrap__img" src="./images/picture5.jpg" alt="Boxes" width="370">
+                    <img class="card-top-wrap__img"
+                    srcset="./images/picture5.jpg 1x, 
+                            ./images/picture5-desk-2x.jpg 2x" 
+                            src="./images/picture5.jpg" alt="Boxes">
                     <p class="card-top-wrap__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -109,7 +164,10 @@
                 </li>
                 <li class="portfolio__item">
                     <div class="card-top-wrap">
-                    <img class="card-top-wrap__img" src="./images/picture6.jpg" alt="Inspiration has no Borders" width="370">
+                    <img class="card-top-wrap__img" 
+                    srcset="./images/picture6.jpg 1x, 
+                            ./images/picture6-desk-2x.jpg 2x" 
+                    src="./images/picture6.jpg" alt="Inspiration has no Borders">
                     <p class="card-top-wrap__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -120,7 +178,10 @@
                 </li>
                 <li class="portfolio__item">
                     <div class="card-top-wrap">
-                    <img class="card-top-wrap__img" src="./images/picture7.jpg" alt="Издание Limited Edition" width="370">
+                    <img class="card-top-wrap__img"
+                    srcset="./images/picture7.jpg 1x, 
+                            ./images/picture7-desk-2x.jpg 2x" 
+                    src="./images/picture7.jpg" alt="Издание Limited Edition">
                     <p class="card-top-wrap__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -131,7 +192,10 @@
                 </li>
                 <li class="portfolio__item">
                     <div class="card-top-wrap">
-                    <img class="card-top-wrap__img" src="./images/picture8.jpg" alt="Проект LAB" width="370">
+                    <img class="card-top-wrap__img" 
+                    srcset="./images/picture8.jpg 1x, 
+                            ./images/picture8-desk-2x.jpg 2x" 
+                    src="./images/picture8.jpg" alt="Проект LAB">
                     <p class="card-top-wrap__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -142,7 +206,10 @@
                 </li>
                 <li class="portfolio__item">
                     <div class="card-top-wrap">
-                    <img class="card-top-wrap__img" src="./images/picture9.jpg" alt="Growing Business" width="370">
+                    <img class="card-top-wrap__img"
+                    srcset="./images/picture9.jpg 1x, 
+                            ./images/picture9-desk-2x.jpg 2x" 
+                    src="./images/picture9.jpg" alt="Growing Business">
                     <p class="card-top-wrap__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -208,5 +275,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -21,9 +21,9 @@
     .features-item {
         
         margin-bottom: 30px;
-        // &:not(:last-child) {
-        //     margin-bottom: 30px;
-        // }
+        @include mobile {
+            width: calc(100% - 30px);
+        }
         @include tablet {
             width: calc(100% / 2 - 30px);
             margin-left: 30px;
