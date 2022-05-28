@@ -23,16 +23,22 @@
 }
 
 .modal {
-        // width: 450px;
-        // height: 609px;
+    width: 90%;
+        position: absolute;
+            top: 50%;
+            left: 50%;
+            transition: transform 250ms;
+            transform: translate(-50%, -50%) scale(1) rotate(0);
         background-color: #fff;
         border-radius: 4px;
         padding: 40px;
-        
-        @include tablet {
+        @include mobile {
             width: 450px;
             height: 609px;
-            position: absolute;
+        }
+
+        @include tablet {
+                position: absolute;
                 top: 50%;
                 left: 50%;
                 transition: transform 250ms;
@@ -146,6 +152,7 @@
 
 .check-text {
     display: flex;
+    flex-wrap: wrap;
     @include font (400, 12px, 1.17, 0.03em);
     color: var(--text-color);
     align-items: center;
@@ -157,6 +164,7 @@
         border: 2px solid var(--title-color);
         border-radius: 3px;
         margin-right: 5px;
+        
     }
     @include desktop {
     @include font (400, 14px, 1.71,0.03em);

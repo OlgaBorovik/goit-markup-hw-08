@@ -4,6 +4,7 @@
     justify-content: center;
     @include desktop {
         padding-top: 94px;
+        padding-bottom: 0;
     }
 
     .features-list {
@@ -44,6 +45,9 @@
         color: var(--title-color);
         margin-bottom: 10px;
         text-align: center;
+        @include tablet {
+            text-align: left;
+        }
     }
 
     .feature-text {
